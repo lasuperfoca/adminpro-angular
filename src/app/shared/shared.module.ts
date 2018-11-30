@@ -4,7 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
-//... Declaro todas las paginas
+// ... Declaro todas las paginas
 @NgModule({
   declarations: [
     NopagefoundComponent,
@@ -20,6 +20,6 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     ]
 })
 
-export class SharedModule { } 
+export class SharedModule { }
 
 
