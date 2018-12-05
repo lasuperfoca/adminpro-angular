@@ -1,0 +1,10 @@
+<h3>{{leyenda}}</h3>
+<div class="input-group mb-3">
+    <button class="btn btn-outline-primary" type="button" (click)="decrementar(valor)">
+        <i class="mdi mdi-minus"></i>
+       </button>
+    <input type="number" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3" [(ngModel)]="valor">
+    <button class="btn btn-outline-primary" type="button" (click)="incrementar(valor)">
+        <i class="mdi mdi-plus"></i> 
+      </button>
+</div>
