@@ -1,7 +1,7 @@
 // Modulos
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-
+import { ChartsModule } from 'ng2-charts';
 import {SharedModule} from '../shared/shared.module';
 
 // Componentes 
@@ -13,6 +13,7 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 
 // Paguinas
 import { PAGES_ROUTES } from './pages.router';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
 // ...Declaro todas las paginas
 @NgModule({
@@ -21,7 +22,9 @@ import { PAGES_ROUTES } from './pages.router';
       DashboardComponent,
       ProgressComponent,
       Graficas1Component,
+      GraficoDonaComponent,
       IncrementadorComponent
+
     ],
     exports: [
       DashboardComponent,
@@ -31,7 +34,8 @@ import { PAGES_ROUTES } from './pages.router';
     imports: [
       PAGES_ROUTES, // --> Importa una constante que tiene como valor pages.routs.ts
       FormsModule,  // --> Importa ngModule para usar en formularios
-      SharedModule
+      SharedModule,
+      ChartsModule
     ]
 })
 
