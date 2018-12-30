@@ -3,6 +3,7 @@ import { PegesComponent } from './peges.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 
 // --Uso el arreglo  appRoutes para definir las rutas que existen en mi aplicación.
@@ -13,6 +14,7 @@ const pagesRoutes: Routes = [
             {path: 'dahboard', component: DashboardComponent },
             {path: 'progress', component: ProgressComponent},
             {path: 'graficas1', component: Graficas1Component},
+            {path: 'accountSetting', component: AccountSettingComponent},
             {path: '', redirectTo: '/dahboard', pathMatch: 'full'}
         ]
     }
